@@ -1,8 +1,29 @@
-# The Solcurity Standard 
+# Kwenta Standards for Smart Contract Engineering
+
+## Styling
+
+- `S1` - Imports follow the format `import {contract} from "package/contract.sol";`.
+- `S2` - Inside each contract, library or interface, use the following order: Type declarations, State variables, Events, Errors, Modifiers, Functions.
+- `S3` - Imports should be in alphabetical order.
+- `S4` - Functions should be grouped according their functionality.
+- `S5` - Functions within a grouping should be ordered according to their visibility as follows: external, public, internal, private
+- `S6` - Documentation for ALL external/public functions, state variables, enums, structs, and custom errors exists in the contract's interface (i.e. `IContract.sol`). Add `/// @inheritdoc` to inherit documentation from the interface.
+- `S7` - Documentation for ALL internal/private functions, state variables, enums, structs, and custom errors exists in the contract's implementation (i.e. `Contract.sol`).
+- `S8` - Natspec follows the format `///`.
+- `S9` - Code comments are led by two forward slashes `//` unless they deserve special attention.
+- `S10` - Mark lines of code that need to be revisted with `/// @custom:todo` and a description (never deploy code to mainnet marked with "todo's").
+- `S11` - Argument names with matching state variables have leading underscores.
+- `S12` - Internal variables *and* functions have leading underscores.
+- `S13` - Functions calls of an inherited contract are led by `super.` in the parent contract.
+- `S14` - Use 4 spaces per indentation level.
+- `S15` - Type declarations should be defined in the interface.
+- `S16` - Events should be defined in the interface.
+- `S17` - Errors should be defined in the interface.
+- `S18` - Avoid using `require` for input validation and instead use custom errors.
+- `S19` - Use `forge fmt` to format your code.
+- `S20` - Include the following tags for each contract: `@title`, `@author`, and `@notice` to describe the contract's purpose and author(s).
 
 Opinionated **security** and **code quality** standard for **Solidity smart contracts**. 
-
-_Based off work by [BoringCrypto](https://github.com/sushiswap/bentobox/blob/master/documentation/checks.txt), [Mudit Gupta](https://www.youtube.com/watch?v=LLiJK_VeAvQ), [Runtime Verification](https://github.com/runtimeverification/verified-smart-contracts/wiki/List-of-Security-Vulnerabilities), and [ConsenSys Diligence](https://consensys.github.io/smart-contract-best-practices/known_attacks)_.
 
 ### General Review Approach:
 - Read the project's docs, specs, and whitepaper to understand what the smart contracts are meant to do.
@@ -31,11 +52,11 @@ _Based off work by [BoringCrypto](https://github.com/sushiswap/bentobox/blob/mas
 - `V9` - If it's a public array, is a separate function provided to return the full array?
 - `V10` - Only use `private` to intentionally prevent child contracts from accessing the variable, prefer `internal` for flexibility.
 
-## Structs
+## Objects (i.e. Structs)
 
-- `S1` - Is a struct necessary? Can the variable be packed raw in storage?
-- `S2` - Are its fields packed together (if possible)?
-- `S3` - Is the purpose of the struct and all fields documented using natspec?
+- `O1` - Is a struct necessary? Can the variable be packed raw in storage?
+- `O2` - Are its fields packed together (if possible)?
+- `O3` - Is the purpose of the struct and all fields documented using natspec?
 
 ## Functions
 
