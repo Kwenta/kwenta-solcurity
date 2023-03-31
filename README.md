@@ -37,6 +37,12 @@
 8. 🪲 prefix -> commits related to fixing bugs
 9. 🚀 prefix -> commits related to deployments/scripts
 
+## Testing
+
+1. For unit tests, see: https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
+2. for integration tests, see: https://book.getfoundry.sh/forge/fork-testing and https://github.com/Uniswap/universal-router/tree/main/test/integration-tests
+3. For invariant testing, see: https://book.getfoundry.sh/forge/invariant-testing and https://mirror.xyz/horsefacts.eth/Jex2YVaO65dda6zEyfM_-DXlXhOWCAoSpOx5PLocYgw
+
 Opinionated **security** and **code quality** standard for **Solidity smart contracts**.
 
 ### General Review Approach:
