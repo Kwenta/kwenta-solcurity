@@ -25,7 +25,7 @@
 -   `S21` - Variable/Function names should be descriptive and never abbreviated.
 -   `S22` - Define project related settings when applicable in the `foundry.toml` file (see example in this repo).
 
-## Git Commit Hygiene
+## Git Commit Hygiene (not hard and fast rules, just guidelines/suggestions)
 
 1. Commit messages are short and in present tense.
 2. 👷🏻‍♂️ prefix -> commits related to adjusting/adding contract logic
@@ -36,6 +36,24 @@
 7. 🗑️ prefix -> commits related to removing code
 8. 🪲 prefix -> commits related to fixing bugs
 9. 🚀 prefix -> commits related to deployments/scripts
+10. Following the below format for PR request descriptions:
+
+```markdown
+{summary}
+
+## Description
+* Create
+* Implement 
+* Remove
+* Test
+* etc...
+
+## Related issue(s)
+Closes [Issue](https://github.com/Kwenta/repo/issues/{ID})
+
+## Motivation and Context
+Squashing bugs, adding features, etc...
+```
 
 ## Testing
 
