@@ -36,7 +36,7 @@
 7. 🗑️ prefix -> commits related to removing code
 8. 🪲 prefix -> commits related to fixing bugs
 9. 🚀 prefix -> commits related to deployments/scripts
-10. Following the below format for PR request descriptions:
+10. Follow the below format for PR request descriptions:
 
 ```markdown
 {summary}
