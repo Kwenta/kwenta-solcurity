@@ -37,7 +37,8 @@
 8. 🪲 prefix -> commits related to fixing bugs
 9. 🚀 prefix -> commits related to deployments/scripts
 10. ⚙️ prefix -> commits related to configuration files
-11. Follow the below format for PR request descriptions:
+11. 📸 prefix -> commits related to adding/updating gas-snapshots
+12. Follow the below format for PR request descriptions:
 
 ```markdown
 {summary}
