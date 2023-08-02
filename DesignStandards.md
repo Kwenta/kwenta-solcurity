@@ -1,6 +1,7 @@
 # 🌊 Waterfall Model
 > Waterfall focuses on completeness and correctness (Quality) of the requirements before proceeding to the next phase. It is a sequential design process, often used in software development processes, in which progress is seen as flowing steadily downwards (like a waterfall) through the phases of Conception, Initiation, Analysis, Design, Construction, Testing, Production/Implementation, and Maintenance.
-> This design method lends itself very well to designing Smart Contract based systems (protocols) given the immutable nature and high cost of changing the system once deployed to a public blockchain.
+
+1. This design method lends itself very well to designing Smart Contract based systems (protocols) given the immutable nature and high cost of changing the system once deployed to a public blockchain.
 
 ## (1) Analysis and Requirements Definition
 1. Understand the primary goal of the system
@@ -19,11 +20,14 @@
 5. Write a design that is Coordination focused: that allows you and n other engineers to coordinate your efforts; your engineering output will then be... "I coordinated a team to build something that any of us couldn't have written individually."
 
 ## (3) Implementation
-> Use a top-down approach for coordinating and assigning tasks: Start with breaking down the primary goal into smaller goals and break those goals into even smaller goals. Do this with parallelism in mind. Organization can be done via Github tasks or some other management tool. 
+1. Use a top-down approach for coordinating and assigning tasks: Start with breaking down the primary goal into smaller goals and break those goals into even smaller goals. Do this with parallelism in mind. Organization can be done via Github issues/task boards or some other management tool. 
 > Smaller goals at the engineering level may also require a degree of design and documentation. This is fine and should be encouraged if the task is complex enough to warrant it.
 1. Test Driven Development (TDD) is encouraged
 2. Documentation in Waterfall is done across all phases but is emphasized in this phase
 3. **(3) Implementation** and **(4) Testing** are often done concurrently; *do not* wait until a feature is fully implemented before testing it
+4. Proper version control is crucial to ensure that the system can be rolled back to a previous state if necessary
+5. Proper code review is crucial to ensure that the system is built according to the design
+6. Task tracking (i.e. updates, priority assignments, etc.) is crucial to ensure that the system is built according to the requirements
 
 ## (4) Testing
 1. Unit Testing (fuzzing, etc.) **(done *in parallel* with implementation)**
